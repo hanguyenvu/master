@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="dangnhap.css">
+	<link rel="stylesheet" type="text/css" href="acc/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+
+	<link rel="stylesheet" type="text/css" href="acc/jcarousel.responsive.css">
+	<script type="text/javascript" src="acc/jcarousel.responsive.js"></script>
+	<script type="text/javascript" src="acc/jquery.jcarousel.min.js"></script>
+
+	<script type="text/javascript" src="acc/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="acc/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="acc/owl.carousel.css">
+	<script type="text/javascript" src="acc/owl.carousel.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function($){
+			var owl = $('.owl-carousel');
+			owl.owlCarousel({
+				items:1,
+				autoplay:true,
+				autoplayTimeout:1000,
+				autoplayHoverPause:true
+			});
+		});
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.danhmuc_item:first').css('display','block');
+			$('.fa_tab').click(function(){
+				var name = $(this).attr('title');
+				$('.danhmuc_item').css('display','none');
+				$('#'+name).css('display','block');
+				$('.fa_tab').removeClass('active');
+				$(this).addClass('active');
+			});
+		});
+	</script>
+	<title>WWW</title>
+</head>
+<body>
+	<div id="bg_top">
+		<div class="container wrapper">
+	 		<div id="top">
+	 			<div class="row">
+	 				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+	 					<div class="top_item">
+	 						 <p><i class="far fa-clock"></i> Thoi gian lam viec
+	 						 	<span>Tu 8h den 17h</span>
+	 						 </p>
+	 					</div>
+	 				</div>
+	 				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+	 					<div class="top_item">
+	 						 <p> <i class="fa fa-phone"></i> Hotline
+	 						 	<strong style="display: block;font-size: 16px;">0363488174</strong>
+	 						 </p>
+	 					</div>
+	 				</div>
+	 				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+	 					<div class="top_item">
+	 						 <p><i class="fa fa-car"></i> Giao hang
+	 						 	<span>Van chuyen mien phi</span>
+	 						 </p>
+	 					</div>
+	 				</div>
+	 				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+	 					<div class="top_item" style="border-right: none;">
+	 						 <p> <i class="fab fa-angellist"></i> Tu van thiet ke
+	 						 	<span>Mau bao bi mien phi</span>
+	 						 </p>
+	 					</div>
+	 				</div>
+
+	 			</div>
+	 		</div>
+		</div>
+	</div>
+
+	<div class="container wrapper">
+		<div id="header">
+			<div id="logo">
+				<a href=""><img src="img/logo1.png"></a>
+			</div>
+			<div id="search">
+				<form name="frmsearch" method="POST" action="">
+					<input type="text" name="ten" value="" placeholder="Tim kiem san pham... ">
+					<input type="submit" name="submit" value="" >
+				</form>
+			</div>
+			<div id="menu">
+			 	<ul id="menu_top">
+			 		<li><a href="index.html">Trang Chu</a></li>
+			 		<li><a href="">Gioi Thieu</a></li>
+			 		<li><a href="">San Pham</a></li>
+			 		<li><a href="">Dich Vu</a></li>
+			 		<li><a href="">Lien He</a></li>
+			 		<li><a href="dangnhap.html"><i class="fas fa-user" style="padding-right: 10px;"></i>Dang Nhap </a></li>
+			 		<li><a href=""><i class="fas fa-shopping-cart" style="padding-right: 10px;"></i> Gio hang </a></li>
+			 	</ul>
+			</div>
+		</div>
+		<div id="main_content">
+			<div>
+                <p style="font-size:20px;"><b>ĐĂNG NHẬP</b></p>
+                <hr width="95%" size="5px" color="red">
+                <br>
+                <form action="">
+                    <div class="row">
+                       <div class="col span-1-of-3">
+                           <label>Tài khoản</label>
+                       </div>
+                       <div class="col span-2-of-3">
+                           <input type="text">
+                       </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Mật khẩu</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="password" placeholder="">
+                        </div>
+                    </div>
+                    <div class="row" style="margin-left: 40px; margin-top: 20px;">
+                        <a class="btn btn-primary" href="index.html" role="button">Đăng nhập</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a class="btn btn-primary" href="#" role="button">Thoát</a>
+                    </div>
+                </form>
+                <div class="row" style="margin-left:350px; margin-top:20px;">
+                    <a href="#"><i>Quên mật khẩu</i></a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#"><i>Bạn chưa có tài khoản!</i></a>
+                </div>
+            </div>
+		</div>
+	</div>
+</body>
+</html>
